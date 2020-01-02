@@ -5,9 +5,9 @@
     "version": "1.1.0",
     "homepage_url": "https://github.com/1-byte-man/HispaBanners",
     "icons": {
-	"32": "icons/logo-32.png",
-	"48": "icons/logo-48.png",
-	"64": "icons/logo-64.png"
+    	"32": "icons/logo-32.png",
+    	"48": "icons/logo-48.png",
+    	"64": "icons/logo-64.png"
     },
     
     "content_scripts": [
