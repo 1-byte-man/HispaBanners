@@ -12,4 +12,7 @@ HispaBanners aspira ser un userscript con el objetivo de poner los banners de hi
 
 ## TODO
 Actualmente el userscript necesita:
-1. Perratencionar el userscript por todos los tablones (especificamente /di/ para que aumenten el repertorio de banners)
+1. Ser empaquetado como extensión para firefox (trabajo en proceso)
+2. Ser empaquetado como extensión para Chrome (y opcionalmente para sus skins)
+3. Perratencionar el userscript por todos los tablones (especificamente /di/ para que aumenten el repertorio de banners)
+
