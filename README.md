@@ -8,7 +8,7 @@ HispaBanners aspira ser un userscript con el objetivo de poner los banners de hi
 
 ### Chrome
 
-1. [Descarga la extension](https://github.com/1-byte-man/HispaBanners/releases/download/1.1.1/HispaBanners.crx) y dirigete a [chrome://extensions](chrome://extensions/)
+1. [Descarga la extensión](https://github.com/1-byte-man/HispaBanners/releases/download/1.1.1/HispaBanners.crx) y dirigete a [chrome://extensions](chrome://extensions/)
 
 2. Arrastra el archivo crx previamente descargado hacia la ventana, aparecera el siguiente mensage preguntando si deseas agregar la extension.
 
@@ -17,6 +17,16 @@ HispaBanners aspira ser un userscript con el objetivo de poner los banners de hi
 3. Acto seguido la extension se agregara
 
 ![ext enabled](static/img/02.png)
+
+### Firefox
+
+Para instalar HispaBanners en el navegador Firefox solo debemos seguir los siguientes pasos:
+
+1. [Descarga la extensión](https://addons.mozilla.org/es/firefox/addon/hispabanners/)
+
+2. Aceptas ~~el ransonguar~~ los permisos para la ejecución del script
+
+3. Acto seguido la extension se descargará y agregará.
 
 ## Browsers support
 
