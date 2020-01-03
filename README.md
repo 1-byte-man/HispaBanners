@@ -41,4 +41,4 @@ Actualmente el userscript necesita:
 
 ## Licencia
 
-[GLP-3.0](LICENSE)
+La licencia usada en este proyecto es GPLv3 Para mas detalles vease el archivo [LICENCE](LICENsE)
