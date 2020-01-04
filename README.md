@@ -4,17 +4,28 @@
 # HispaBanners
 HispaBanners aspira ser un userscript con el objetivo de poner los banners de hispachan de nuevo.
 
-## Instalacion
+## Tabla de contenidos
+
+1. [Instalación](#instalación)
+      1. [Chrome](#chrome)
+      1. [Firefox](#firefox)
+2. [Soporte para navegadores](#browsers-support)
+3. [Discución](#discusión)
+4. [Licencia](#licencia)
+
+## Instalación
 
 ### Chrome
 
 1. [Descarga la extensión](https://github.com/1-byte-man/HispaBanners/releases/download/1.1.1/HispaBanners.crx) y dirigete a [chrome://extensions](chrome://extensions/)
 
-2. Arrastra el archivo crx previamente descargado hacia la ventana, aparecera el siguiente mensage preguntando si deseas agregar la extension.
+2. Activa el modo desarrollador en la barra superior
+
+3. Arrastra el archivo crx previamente descargado hacia la ventana, aparecera el siguiente mensage preguntando si deseas agregar la extension.
 
 ![modal confirm](static/img/01.png)
 
-3. Acto seguido la extension se agregara
+4. Acto seguido la extension se agregara
 
 ![ext enabled](static/img/02.png)
 
@@ -32,6 +43,10 @@ Para instalar HispaBanners en el navegador Firefox solo debemos seguir los sigui
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Samsung | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Opera | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png" alt="Electron" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Electron |
 | --------- | --------- | --------- | --------- | --------- |
+
+## Discusión
+
+Hilo oficial para debatir, reportar errores y sugerir mejoras en la extension [aqui](https://www.hispachan.org/m/res/63092.html)
 
 ## TODO
 Actualmente el userscript necesita:
