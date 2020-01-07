@@ -38,5 +38,5 @@ function createBanner(){
 }
 
 var banner = createBanner()
-var container = document.querySelector('.logo')
+var container = document.querySelector('.moculto')
 container.appendChild(banner, container.childNodes[0])
