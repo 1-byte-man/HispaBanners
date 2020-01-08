@@ -5,17 +5,17 @@
     "version": "1.2.0",
     "homepage_url": "https://github.com/1-byte-man/HispaBanners",
     "icons": {
-    	"32": "icons/logo-32.png",
-    	"48": "icons/logo-48.png",
-    	"64": "icons/logo-64.png"
+        "32": "icons/logo-32.png",
+        "48": "icons/logo-48.png",
+        "64": "icons/logo-64.png"
     },
-    
+    "web_accessible_resources": [
+        "available.json"
+    ],
     "content_scripts": [
-	{
-	    "matches": ["https://www.hispachan.org/*"],
-	    "js": ["hispabanners.js"]
-	}
-
+        {
+            "matches": ["https://www.hispachan.org/*"],
+            "js": ["hispabanners.js"]
+        }
     ]
-    
 }

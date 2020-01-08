@@ -1,42 +1,49 @@
-function randInt() {
-    let x = Math.round(Math.random() * 261)
-    if(x < 100 && x >= 10){
-       x = '0' + x.toString()
-    }
-    if(x < 100 && x < 10){
-       x = '00' + x.toString()
-    }
+(function addBanner() {
+    const FIRST_ELEMENT = 0
+    const SUCCESS_STATUS = 200
 
-    return x
-}
-
-function createBanner(){
-    var num = randInt()
-    var banner = document.createElement('img')
-    var extencion = '.png'
-    var url = `https://www.hispachan.org/banners/new/${num}${extencion}`
-    banner.src = url
-    banner.id = 'banner'
-    banner.style.cssText = `display: block; margin: 10px auto 10px auto;`
-
-    banner.onerror = function() {
-        var ext = banner.src.split('.').pop().replace(/\//g,'')
-        console.log(`Error loading banner with format: ${ext}`)
-        if(ext === 'png' || ext === 'jpg') {
-            banner.src = `https://www.hispachan.org/banners/new/${num}.gif`
-            console.log('Banner changed to gif format')
-        } else if(ext === 'gif' || ext === 'png') {
-            banner.src = `https://www.hispachan.org/banners/new/${num}.jpg`
-            console.log('Banner changed to jpg format')
-        } else {
-            banner.src = `https://www.hispachan.org/banners/new/${num}.png`
-            console.log('Banner changed to png format')
-        }
+    async function getJSON(url) {
+        return new Promise((resolve, reject) => {
+            const xhr = new XMLHttpRequest()
+            xhr.open('GET', url, true)
+            xhr.responseType = 'json'
+            xhr.onload = () => {
+                const status = xhr.status
+                if (status === SUCCESS_STATUS) {
+                    return resolve(xhr.response)
+                }
+                const err = new Error(xhr.statusText)
+                err.response = xhr.response
+                err.status = xhr.status
+                reject(err)
+            }
+            xhr.send()
+        })
     }
 
-    return banner
-}
+    async function getBannersAvailable() {
+        const resourceURL = chrome.runtime.getURL('available.json')
+        const bannersAvailable = await getJSON(resourceURL)
+        return bannersAvailable
+    }
 
-var banner = createBanner()
-var container = document.querySelector('.moculto')
-container.appendChild(banner, container.childNodes[0])
+    async function getRandomBannerURL() {
+        const bannersAvailable = await getBannersAvailable()
+        const randomNumber = Math.floor(Math.random() * bannersAvailable.length)
+        return bannersAvailable[randomNumber]
+    }
+
+    async function createRandomBanner(){
+        const url = await getRandomBannerURL()
+        const banner = document.createElement('img')
+        banner.src = url
+        banner.id = 'banner'
+        banner.style.cssText = 'display: block; margin: 10px auto 10px auto;'
+        return banner
+    }
+
+    createRandomBanner().then((banner) => {
+      const logoElement = document.getElementsByClassName('logo')[FIRST_ELEMENT]
+      logoElement.insertAdjacentElement('beforebegin', banner)
+    })
+}())
