@@ -8,7 +8,7 @@ HispaBanners aspira ser un userscript con el objetivo de poner los banners de hi
 
 1. [Instalación](#instalación)
       1. [Chrome](#chrome)
-      1. [Firefox](#firefox)
+      2. [Firefox](#firefox)
 2. [Soporte para navegadores](#browsers-support)
 3. [Discución](#discusión)
 4. [Licencia](#licencia)
@@ -50,9 +50,10 @@ Hilo oficial para debatir, reportar errores y sugerir mejoras en la extension [a
 
 ## TODO
 Actualmente el userscript necesita:
-1. Ser empaquetado como extensión para firefox (trabajo en proceso)
-2. Ser empaquetado como extensión para Chrome (y opcionalmente para sus skins)
-3. Perratencionar el userscript por todos los tablones (especificamente /di/ para que aumenten el repertorio de banners)
+1. Ser perratencionado por tablones que puedan aportar banners nuevos.
+2. Darle soporte técnico a quien lo necesite.
+
+Otras colaboraciones son bienvenidas siempre y cuando resulten en algo util y que pueda mejorar el funcionamiento de la extensión. Recuerden que el trabajo social y de ayuda a la comunidad tambien se puede contar como colaboración
 
 ## Licencia
 
