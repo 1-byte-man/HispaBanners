@@ -6,12 +6,17 @@ HispaBanners aspira ser un userscript con el objetivo de poner los banners de hi
 
 ## Tabla de contenidos
 
-1. [Instalación](#instalación)
+1. [Cancelación de proyecto](#cancelación)
+2. [Instalación](#instalación)
       1. [Chrome](#chrome)
       2. [Firefox](#firefox)
-2. [Soporte para navegadores](#browsers-support)
-3. [Discución](#discusión)
-4. [Licencia](#licencia)
+3. [Soporte para navegadores](#browsers-support)
+4. [Discución](#discusión)
+5. [Licencia](#licencia)
+
+## Cancelación
+
+Debido a que el regreso de los banners a Hispa de forma oficial este proyecto pierde sentido ~~a no ser que zeta la vuelva a cagar~~ por lo que recomendamos a quienes hayan descargado la extensión que la deshabiliten o borren para evitar posibles problemas como banners duplicados. El código y archivos pertenecientes al proyecto no serán eliminados (En caso de que estos vuelvan a ser requeridos en algun momento) Sin embargo el desarrollo se dará por terminado hasta entonces.
 
 ## Instalación
 
